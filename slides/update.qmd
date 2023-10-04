@@ -1,0 +1,271 @@
+---
+title: The structure of domestic firm production networks
+subtitle: A-Club DoM LSE
+author:
+  - name: Alonso Alfaro-Ureña
+    email: alfaroua@bccr.fi.cr
+    affiliations: Central Bank of Costa Rica and University of Costa Rica
+  - name: Mariany Fuentes
+    email: marianyf@umich.edu
+    affiliations: University of Michigan
+  - name: José Ignacio González Rojas
+    email: j.i.gonzalez-rojas@lse.ac.uk
+    affiliations: LSE
+  - name: Isabela Manelici
+    email: i.manelici@lse.ac.uk
+    affiliations: LSE, CEP and CEPR
+  - name: José P. Vásquez
+    email: j.p.vasquez@lse.ac.uk
+    affiliations: LSE, CEP and CEPR
+format:
+  revealjs: 
+    theme: slides.scss
+    slide-number: true
+    date-format: long
+    width: 1920
+    height: 1080
+bibliography: bibliography.bib
+date: October 4, 2023
+csl: apa.csl
+---
+
+## Motivation
+### Increasing availability of firm production networks data! 
+
+![Countries with firm production networks data](images/map_data_availability.png){#fig-map_data_availability}
+
+## Motivation
+### Exciting research agendas
+
+- [**Tax compliance:**]{.alert} @almuniaStrategicConfusedFirmsforthcoming and @carrilloGhostingTaxAuthority2022. 
+- [**Transmission of micro and macroeconomic shocks through production networks:**]{.alert} @Acemoglu2012TheFluctuations, @Huneeus2020ProductionShocks, @Dhyne2022ForeignImpacts, @CevallosFujiy2022ProductionSubstitution, @Dhyne2021TradeNetworks, and @Demir2022FinancialNetworks. 
+- [**Earnings inequality:**]{.alert} @adaoImportsExportsEarnings2022 and@Huneeus2022EarningsNetworks. 
+- [**Endogenous network formation:**]{.alert} @Panagrahi2022EndogenousProductivity, @Arkolakis2021SpatialNetworks, @Bernard2022TheApproach, @Bernard2019ProductionPerformance
+- [**Supply chain disruptions:**]{.alert} @Carvalho2021SupplyEarthquake and @CevallosFujiy2022ProductionSubstitution. 
+
+## Motivation
+### Are the results obtained in one country applicable to all of them?
+#### Threats to our study. 
+
+- [Data collection.]{.bg} 
+- [Informality. ]{.bg} 
+- [Auditing:]{.bg}  @almuniaStrategicConfusedFirmsforthcoming and @pomeranzNoTaxationInformation2015. 
+- [Institutions. ]{.bg} 
+
+## Motivation
+### Are the results obtained in one country applicable to all of them?
+#### Different topographies and geographies
+
+::: {layout="[[1,1], [1]]"}
+![Belgium](images/map_belgium.jpg){width=3in}
+
+![Kenya](images/map_kenya.jpg){width=3in}
+
+![Costa Rica](images/map_costa_rica.jpg){width=3in}
+:::
+
+## Motivation
+### Are the results obtained in one country applicable to all of them?
+#### Different trade openness
+
+![Trade openness index (2019)](images/map_trade_openness.svg){width=12in}
+
+## Motivation
+### Are the results obtained in one country applicable to all of them?
+#### Other very important considerations
+
+- Data collection. 
+- Informality. 
+- Auditing: @almuniaStrategicConfusedFirmsforthcoming and @pomeranzNoTaxationInformation2015. 
+- Institutions. 
+
+## This paper
+1. Describe the coverage and cleaning of the data. 
+2. Describe the firms and their relationships in formal sector of Costa Rica. 
+  - Number of workers
+  - Total sales. 
+  - Firm-to-firm transactions: sales and purchases. 
+  - Number of customers and suppliers. 
+
+## This paper
+3. Replicate and provide 15 (new) stylised facts found in developed countries' production networks. 
+  - Firm-to-firm relationships. 
+  - The role of geography in these relationships. 
+  - Exposure to international trade. 
+4. Compare these stylised facts to those reported in other countries. 
+5. Provide replication package to other researchers. 
+
+## This paper
+### Today
+1. [Describe the coverage and cleaning of the data. ]{.bg} 
+2. Replicate and provide 15 (new) stylised facts found in developed countries' production networks. 
+  - [Firm-to-firm relationships. ]{.bg}
+  - [The role of geography in these relationships. ]{.bg}
+  - Exposure to international trade. 
+
+## Crash course on production networks
+### Weighted directed network/graph. 
+
+- [Firms:]{.fg} Nodes
+- [Firm-to-firm relationships:]{.fg} Edges. 
+
+![Simple production network](images/fig_production_network.svg)
+
+## Data
+### Available in Costa Rica
+![Agents](images/fig_production_network_agents.png)
+
+## Data
+### Sources
+- [Employer-Employee Administrative Data (2006-2019):]{.fg} wage, firm industry,  plant location. 
+- [VAT Administrative data (2008-2019):]{.fg} annual firm-to-firm transactions, customers, suppliers, firm industry, administrative location. At least 2.5 million Costa Rican colones. (~$4,200)
+- [Corporate Tax Administrative data (2008-2019):]{.fg} Balances sheets with revenue, profits, costs, fixed assets, others. 
+- [Customs data (2008-2019):]{.fg} yearly firm-level imports and exports. 
+
+## Data
+### Sample selection
+- Firms with one permanent worker anually. 
+- Exclude the Diplomatics Activities sector. 
+
+**After cleaning procedure we capture in a given year between**
+
+- 94.5 and 97.4% of total sales. 
+- 81.5 and 87.9% of network sales across firms. 
+- 78.5 and 84.8% of transactions across firms. 
+
+**Agents in the economy**
+
+- 96,177 businesses and 3,839,030 connections between buyers and suppliers. 
+- About 38 thousand businesses and 300 thousand transactions in a given year. 
+
+
+## Data
+### Sectoral composition is persistent in time
+
+![Total sales](images/figure_A4.png){width=5in}
+
+## Data
+### Share of buyers and/or sellers is also persistent in time
+
+![Total sales](images/figure_A2.png){width=5in}
+
+## Data
+### Upstream (downstream) sectors are more likely to be only sell (buy) from other firms
+
+![Total sales](images/figure_A3.png){width=5in}
+
+## Stylised facts
+
+::: {.callout-note title="Main message"}
+The number of customers/suppliers is the key driver of a firm-to-firm sales. 
+:::
+
+### Domestic firm-to-firm trade
+1. Domestic production networks are sparse. 
+2. The distributions of firm sales, network sales and purchases, and buyer-supplier connections show substantial dispersion. 
+3. Firm size is positively correlated to the number of connections to other firms. 
+4. Firm size is positively correlated to the number of municipalities and number of industries with which a firm trades. 
+5. The number of links accounts for more than half of the variation in the total value of firm-to-firm sales and purchases. As we aggregate sales and purchases from the firm-level to the industry-level, the value of the average transaction with buyers or suppliers becomes more important. 
+
+## Stylised facts
+
+::: {.callout-note title="Main message"}
+The number of customers/suppliers is the key driver of a firm-to-firm sales. 
+:::
+
+### Domestic firm-to-firm trade
+
+6. The distribution of sales (purchases) among customers (suppliers) does not vary substantially with the number of customers (suppliers). 
+7. The production network displays negative degree assortativity between sellers and buyers. 
+8. Top customers (suppliers) account for a high percentage of a firm’s sales (purchases). 
+9. The persistence of firm-to-firm linkages increases with firm size. 
+
+## Stylised facts
+
+::: {.callout-note title="Main message"}
+The number of customers/suppliers is the key driver of a firm-to-firm sales. 
+:::
+
+### The geography of domestic firm-to-firm trade
+
+10. Most firm-to-firm linkages are formed between nearby firms. 
+11. Trade flows between municipalities increase in the geographical proximity between the municipalities. 
+12. The number of connections decays with distance and travel time faster than the average transaction. 
+
+### Firm-to-firm trade within and across borders
+13. Importer (exporter) firms are larger than non-importer (non-exporter) firms. 
+14. Most firms do not import or export directly, but most do so indirectly. 
+15. Direct and total export and import shares increase with firm size. 
+
+## Stylised facts
+### Today
+1. The distributions of firm sales, network sales and purchases, and buyer-supplier connections show substantial dispersion. 
+2. Firm size is positively correlated to the number of connections to other firms. 
+3. The production network displays negative degree assortativity between sellers and buyers. 
+4. The persistence of firm-to-firm linkages increases with firm size. 
+5. The number of connections decays with distance and travel time faster than the average transaction. 
+
+## Stylised facts
+### Firms within a sector are heterogenous
+
+::: {layout="[[1, 1], [1, 1]]"}
+![Total sales](images/figure_1_a.png){width=5in}
+
+![Network sales](images/figure_1_b.png){width=5in}
+
+![Number of customers](images/figure_1_d.png){width=5in}
+
+![Number of suppliers](images/figure_1_d.png){width=5in}
+:::
+
+## Stylised facts
+### The number of links explains more than half of the variation of network transactions
+$$X_{i} = \text{number of links} \cdot \text{average transaction}$$
+
+
+::: {.fragment}
+::: {layout="[1, 1]"}
+![Number of link](images/figure_2_a.png){width=10in}
+
+![Average transaction](images/figure_2_b.png){width=10in}
+:::
+:::
+
+## Stylised facts
+### A customer (supplier) firm connects with many suppliers (customers); but those suppliers would, on average, have fewer customers (suppliers) 
+
+::: {layout="[1, 1]"}
+
+![Customers and the suppliers of customers](images/figure_5_a.png){width=10in}
+
+![Suppliers and the customers of suppliers](images/figure_5_b.png){width=10in}
+:::
+
+## Stylised facts
+### The persistence of firm-to-firm linkages increases with firm size
+![Destruction (A), survival (Both) and creation (B) of links](images/fig_venn_diagram.png){width=15in}
+
+## Stylised facts
+### The persistence of firm-to-firm linkages increases with firm size
+
+::: {layout="[1, 1]"}
+![Survival](images/figure_7_a.png){width=10in}
+
+![Creation](images/figure_7_b.png){width=10in}
+:::
+
+## Stylised facts
+### The number of connections decays with distance and travel time faster than the average transaction
+
+::: {layout="[[1], [1, 1]]"}
+![Network sales](images/figure_10_a.png){width=6in}
+
+![Number of connections](images/figure_10_b.png){width=6in}
+
+![Average transaction](images/figure_10_c.png){width=6in}
+:::
+
+## References
+
+::: {#refs}
+:::
