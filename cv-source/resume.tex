@@ -1,0 +1,266 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+\newcommand{\raHeadingOne}[3]{\runsubsection{\uppercase{#1}}\hfill\location{#2 | #3}}
+\newcommand{\raHeadingTwo}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}}
+\newcommand{\researchers}[1]{\runsubsection{\textbf{Researchers: }}\descript{#1}\fakeNewLine}
+
+\newcommand{\volunteerHeading}[2]{\runsubsection{#1}\hfill\location{#2}}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[3]{\Project{#1}
+\descript{#2 | #3}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+\newcommand{\thesis}[1]{\textbf{Thesis:} #1}
+
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{José Ignacio González Rojas}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{jigonzalez.com}
+% vs how you want it to show up. If it's you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://www.jigonzalez.com}
+\newcommand{\yourEmail}{j.i.gonzalez-rojas@lse.ac.uk}
+\newcommand{\yourPhone}{+44 7453 455149}
+\newcommand{\githubUserName}{jigonr}
+\newcommand{\linkedInUserName}{jigonr}
+
+% An alternate profile section 
+\alignProfileTable
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+    \faEnvelope ~ \href{mailto:\yourEmail}{\yourEmail}
+     \\
+     \href{https://github.com/\githubUserName}{\faGithub ~ \githubUserName} & 
+     \faPhone ~ \yourPhone
+     \\
+     \faMapMarker ~ London, UK & \href{https://www.linkedin.com/in/\linkedInUserName}{\faLinkedin ~ \linkedInUserName} \\
+     Website: ~ \href{\yourWebsiteLink}{\yourWebsite}
+ \end{tabular*}
+
+%\begin{center}
+%    \Huge \scshape\yourName \\ \vspace{1pt}
+%    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+%    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+%    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+%    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+%\end{center}
+
+%\section{Profile}
+%\large{Senior student of Economics at Universidad de Costa Rica with two years experience in economic research and data analysis. Experience in Research, Data Analysis, Machine Learning and Finance. Strong skills in programming and data manipulation. Knowledge in Python, R, Julia, \LaTeX ~ and STATA. Highly detailed oriented, focused on flexibility and adaptability of solutions, quick learner and can work under pressure. Leader, great capacity for assertive communication and team work. }
+\section{Interests}
+International Trade. Industrial Organization. Organizational Economics. Applied Econometrics. 
+\sectionsep
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Put school first and degree second if your school is reputable
+\educationHeading{PhD in Economics and Management}{London School of Economics}{London, UK}{Expected June 2029}\\
+\educationHeading{MRes in Economics and Management (Distinction)}{London School of Economics}{London, UK}{November 2025}\\
+\educationHeading{B. Sc. Economics (Honor Graduation)}{Universidad de Costa Rica}{San José, CR}{October 2022}
+
+%\courseWork{Proof-Based Real Analysis and Linear Algebra; Microeconometrics; Time Series Econometrics; International Trade} \\
+%\thesis{Political Budget Cycles in elector-friendly expenditures. Evidence from Costa Rican Municipalities (with André Campos and Augusto del Solar) [In Progress]}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+
+\section{Working Papers}
+``The Anatomy of Domestic Production Networks: Evidence from Costa Rica'' (w/ Alonso Alfaro-Ureña, Mariany Fuentes, Isabela Manelici and José P. Vásquez)
+
+\sectionsep
+
+\section{Work in Progress}
+``The Global Visa Atlas'' (w/ David Cai and Peter J. Lambert)
+
+``Firm Boundaries as Supply Chain Risk Management''
+
+\sectionsep
+
+\section{Research Experience}
+
+\runsection{Market Structure, Vertical Integration and Farmers' Welfare in the Costa Rica Coffee Industry}\\
+\raHeadingTwo{London School of Economics}{Research Assistant}{London, UK}{2026}\\
+\researchers{\href{https://fabrizioleone.github.io/}{Fabrizio Leone (Research Economist, Bank of Italy)}, \href{https://www.lse.ac.uk/people/rocco-macchiavello}{Rocco Macchiavello (Professor of Management, LSE)}, \href{https://www.tse-fr.eu/people/josepa-miquel-florensa}{Josepa Miquel-Florensa (Research Faculty, TSE)} and \href{https://sites.google.com/site/nicolapavanini/home}{Nicola Pavanini (Professor of Finance and Industrial Organization, Tilburg University)}} \\
+
+\sectionsep
+
+\runsection{The Perfect Match: Assortative Matching in Mergers and Acquisitions.}\\
+\raHeadingTwo{London School of Economics}{Ocassional RA}{London, UK}{August 2025-February 2026}\\
+\researchers{\href{https://www.insead.edu/faculty-personal-site/maria-guadalupe}{María Guadalupe (Professor, INSEAD)}, \href{https://sites.google.com/view/veronica-rappoport/home}{Verónica Rappoport (Professor of Management, LSE)}, \href{https://bsalanie.github.io/}{Bernard Salanié (Professor, Columbia Econ)} and \href{https://sites.google.com/view/cmathomas/home}{Catherine Thomas (Professor of Managerial Economics and Strategy, LSE)}} \\
+
+\sectionsep
+
+\runsection{Credit and Exports: Lessons from Micro-Level Data}\\
+\raHeadingTwo{London School of Economics}{Ocassional RA}{London, UK}{July 2025-August 2025}\\
+\researchers{\href{https://sites.google.com/site/banudemirpakel/home}{Banu Demir (Professor, Oxford Econ)}, and \href{https://sites.google.com/view/veronica-rappoport/home}{Verónica Rappoport (Professor of Management, LSE)}} \\
+
+\sectionsep
+
+\runsection{Trade Shocks and Credit Reallocation}\\
+\raHeadingTwo{London School of Economics}{Ocassional RA}{London, UK}{December 2024}\\
+\researchers{Stefano Federico (Senior Economist, Bank of Italy), \href{https://sites.google.com/view/veronica-rappoport/}{Verónica Rappoport (Professor of Management, LSE)}, and \href{http://www.fadihassan.eu/}{Fadi Hassan (Senior Economist, Bank of Italy)}} \\
+
+\sectionsep
+
+\runsection{Who Pays the Price of Supply Chain Disruptions? The Case of a Cyberattack on Customs}\\
+\raHeadingTwo{Center for Economic Performance}{PhD Intern}{London, UK}{May - September 2024}\\
+\researchers{\href{https://www.isabelamanelici.com/}{Isabela Manelici (AP, LSE Economics)}, \href{https://jpvasquez-econ.github.io/}{Jose P. Vasquez (AP, LSE Management)}, and \href{https://albertovindas.com/}{Alberto Vindas (Senior Economist, Central Bank of Costa Rica, and AP, University of Costa Rica)}} \\
+
+\sectionsep
+
+\enlargethispage{\baselineskip}
+\runsection{The Gains from Foreign Investment in an Economy with Distortions}\\
+\raHeadingTwo{London School of Economics}{Management (Predoc)}{London, UK}{Jul 2022 - Jul 2023}\\
+\raHeadingTwo{The World Bank Group}{Development Research Group}{Washington, D.C.}{Dec 2020 - Jun 2021}\\
+\mbox{}\hfill \location{Jan 2022 - Jul 2022}\\
+\mbox{}\hfill \location{Jan 2023 - June 2023}\\
+\emph{Trade and Integration Unit [Short Term Temporary]}\\
+\researchers{\href{https://www.isabelamanelici.com/}{Isabela Manelici}, \href{https://jpvasquez-econ.github.io/}{Jose. P. Vasquez} and \href{https://www.romandavidzarate.com/}{Román D. Zárate (Research Economist, WB Development Research Group)}}
+\sectionsep
+
+\runsection{The Structure of Domestic Production Networks}\\
+\raHeadingTwo{Central Bank of Costa Rica}{Economic Research Intern}{San José, CR}{Apr 2022 - Jul 2022}\\
+\researchers{\href{https://www.alonsoalfaro.com/}{Alonso Alfaro-Ureña (Chief Economist, Central Bank of Costa Rica, and Professor, University of Costa Rica)}, \href{https://lsa.umich.edu/econ/people/phd-students/marianyf.html}{Mariany Fuentes (University of Michigan Economics Ph. D. Student)}, \href{https://www.isabelamanelici.com/}{Isabela Manelici}, and \href{https://jpvasquez-econ.github.io/}{Jose P. Vasquez}} \\
+
+\sectionsep
+
+\runsection{The Diffusion of Technology during the Last Three Millennia}\\
+\raHeadingOne{Sciences Po}{Paris, FR}{Jul 2021 – Aug 2021}\\
+\researchers{{\href{https://jmboehm.github.io/}{Johannes M. Boehm (Professor, Geneva Graduate Institute)},  \href{https://sites.google.com/site/thomaschaney/}{Thomas Chaney (Professor, University of Southern California)} and \href{https://sites.google.com/view/danial-lashkari/}{Daniel Lashkari (Research Economist, FRB-NY)}}} \\
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Teaching Experience}
+
+\runsection{MG205: Econometrics: Theory and Applications}\\
+\raHeadingTwo{London School of Economics}{Teaching Fellow}{London, UK}{2026/27}\\
+\sectionsep
+
+\runsection{MG206: Business Strategy in International and Emerging Markets}\\
+\raHeadingTwo{LSE Summer School}{Seminar Teaching}{London, UK}{2026, Session Two}\\
+\sectionsep
+
+\runsection{MG106: Strategic Management}\\
+\raHeadingTwo{LSE Summer School}{Class Teaching}{London, UK}{2026}\\
+\sectionsep
+
+\runsection{Microeconomic Theory II}\\
+\raHeadingTwo{Universidad de Costa Rica}{Teaching Assistant}{San José, CR}{Spring 2020}\\
+\descript{Professor: \href{https://microeconomia.xyz/}{Édgar A. Robles, Ph. D. (Director of Economics Graduate Program of UCR)}}
+\sectionsep
+
+\section{Work Experience}
+
+\runsection{Building Capacity to Fight Tax Evasion}\\
+\raHeadingTwo{The World Bank Group}{Development Research Group}{Washington, D.C.}{Jan 2022 - Jun 2022}\\
+\raggedright 
+\emph{Trade and Integration Unit [Short Term Temporary]}\\
+\researchers{\href{https://sites.google.com/site/decrgbobrijkers/home}{Bob Rijkers (Senior Economist, WB, and Professor, Utrecht University)} and Jean-François Arvis (Senior Transport Economist, WB)}
+
+\sectionsep
+
+\resumeHeading{Friedrich Naumann Foundation}{Junior Research Associate}{San José, CR}{Feb 2021-Jul 2021}
+\sectionsep
+
+%\section{Volunteer Experience}
+
+%\raHeadingOne{Economics' Student Council (UCR)}{San José, CR}{Apr 2019-Present}\\
+%\volunteerHeading{Assemblyman of Faculty of Economic Sciences}{Nov 2019-Present}\\
+%\volunteerHeading{Student Representative in Evaluation's Commitee}{Apr 2019-Dec 2020}\\
+%\volunteerHeading{Representative in Courses' Virtualization in Covid-19's Commitee}{Mar 2020-Aug 2020}\\
+%\volunteerHeading{Treasurer of the Student Council}{Jul 2019-Jul 2020}
+%\begin{bullets}
+%    \item Technical Report on teacher's wages of UCR for the Dean of the Faculty of Economic Sciences with \href{https://ricardohuapaya.github.io/}{Ricardo Huapaya} using \textbf{STATA}. (October, 2019) 
+%\end{bullets}
+
+%\raHeadingOne{Acción Social Calasanz}{San José, CR}{Apr 2011-Dec 2017}\\
+%\volunteerHeading{General Coordinator and Treasurer}{Feb 2015-Dec 2016}
+%\begin{bullets}
+%    \item Leader of fund raising and balanced distribution of financial and human resources to social projects. 
+ %   \item Manager of 40 volunteers.  
+%\end{bullets}
+%\volunteerHeading{Volunteer}{Apr 2011-Dec 2017}
+%\begin{bullets}
+%    \item Contributed to fulfill the self-identified need to underserved communities that were not sponsored by any ONG or government institution, including coaching, delivery of basic supplies and cooking ware for their Children's Center. 
+%    \item Completion of a Leadership Program and cultural exchange at Universidad Cristóbal Colón in Veracruz, México. (December, 2017)  
+%\end{bullets}
+%\sectionsep
+
+\section{Awards, Grants and Honors}
+\begin{bullets}
+    \item \textbf{2026:} Department of Management RIF grant, LSE. \textbf{Joint award:} £500, with David Cai and Peter John Lambert
+    \item Friedrich Naumann Foundation for Freedom's Liberalization of Energy Markets Grant for the project \textbf{Opportunities in the Central American Energy Markets for sustainable crypto mining: The Costa Rican Case}. \textbf{Co-investigator} along with André Campos, Alberto Sequeira and Asdrúbal Vargas \textbf{(Principal Investigator)}. \textbf{Award amount:} \$ 7.200. (2021)
+    \item Bachelor with excellence (High School) given by Ministry of Education for scoring 90/100 or more in all National Bachelor's tests (2018). 
+    %\item Gratitude letter from General Consul of US Embassy for being host to delegates and English-Spanish interpreter in Community College Fair 2017. (2017). 
+    %\item High School class Valedictorian and graduated \textbf{with honors} (2017). 
+    %\item School Award as Positive Role Model of the Year fostering Solidarity. (2012, 2017)
+\end{bullets}
+\sectionsep
+
+\section{Presentations and Conference Attendance}
+\begin{bullets}
+    \item \textbf{2025:} EconCR2025, Conferencia de Economistas Costa Rica (attendance)
+    \item \textbf{2023:} Conferencia de Economistas Costa Rica.  
+\end{bullets}
+
+
+
+
+\sectionsep
+
+%\section{Books}
+%Potencial eléctrico de Costa Rica para la Criptominería. (2021). (w/ André Campos, Alberto Sequeira, Luis D. Valverde and Asdrúbal Vargas) \textbf{Friedrich Naumman Foundation Central America}. %\url{https://bit.ly/CriptoCR}
+
+%\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+%\begin{skillList}
+%    \singleItem{Programming Languages:}{Python, Julia, R, STATA}
+%    \\
+%    \singleItem{Technology:}{Git, \LaTeX}
+%    \\
+%    \singleItem{Languages:}{Spanish (Native), English (Fluent)}
+%\end{skillList}
+
+% A more concise alternate 
+\begin{skillList}
+     \doubleItem{Programming Languages:}{Python, Julia, R, STATA, SQL}%
+     {Technology:}{Git, UNIX, GIS, Jupyter, Web Scraping}
+     \\
+     \doubleItem{Typewritting and Office Programs:}{\LaTeX, Word, Excel, PowerPoint}
+     {Languages:}{Spanish (Native) and English (Fluent)}\\%
+ \end{skillList}
+\end{document}
