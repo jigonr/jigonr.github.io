@@ -117,11 +117,12 @@
   );
 
   /**
-   * Activate/show sections on load with hash links
+   * Open the profile on arrival, while preserving direct section links
    */
   window.addEventListener("load", () => {
-    if (window.location.hash) {
-      let initial_nav = select(window.location.hash);
+    const initialHash = window.location.hash || "#about";
+    if (initialHash !== "#header") {
+      let initial_nav = select(initialHash);
 
       if (initial_nav) {
         let header = select("#header");
@@ -130,7 +131,7 @@
         header.classList.add("header-top");
 
         navlinks.forEach((item) => {
-          if (item.getAttribute("href") == window.location.hash) {
+          if (item.getAttribute("href") == initialHash) {
             item.classList.add("active");
           } else {
             item.classList.remove("active");
@@ -141,7 +142,7 @@
           initial_nav.classList.add("section-show");
         }, 350);
 
-        scrollto(window.location.hash);
+        scrollto(initialHash);
       }
     }
   });
